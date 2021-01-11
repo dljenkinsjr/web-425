@@ -1,0 +1,37 @@
+<!--
+/*============================================;
+Title: Assignment 2.4;
+Author: Professor Krasso ;
+Date: 5 January 2020;
+Modified By: Douglas Jenkins;
+Description: Routing in action
+;===========================================*/
+-->
+
+<br><br>
+  <h2>Assignment 2.4 Composer App</h2>
+<br>
+<br>
+<div class="align-center">
+  <h4>List of Gaming Composers</h4>
+<br>
+<br>
+<div class="row">
+  <div class="col-sm-12">
+    <table class="table table-bordered">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Full name</th>
+          <th scope="col">Genre</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let composer of composers">
+        <tr>
+          <!-- The created information will be stored in the table data-->
+          <td scope="row">{{ composer.fullName }}</td>
+          <td>{{composer.genre}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
