@@ -1,0 +1,17 @@
+/*============================================;
+Title: Assignment 6.4;
+Author: Professor Krasso ;
+Date: 8 February 2020;
+Modified By: Douglas Jenkins;
+Description: Input Properties
+;===========================================*/
+
+.logo{
+  margin-top: 5px;
+}
+
+.main-container{
+  padding-top: 25px;
+  width: 80%;
+  margin: 0 auto;
+}

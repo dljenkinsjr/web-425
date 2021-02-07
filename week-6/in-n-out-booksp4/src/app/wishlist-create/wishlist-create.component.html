@@ -1,0 +1,27 @@
+<!---
+/*============================================;
+Title: Assignment 6.2;
+Author: Professor Krasso ;
+Date: 7 February 2020;
+Modified By: Douglas Jenkins;
+Description: Input/Output Properties, Part 1
+;===========================================*/
+-->
+
+<!-- Creates a form layer -->
+<form fxLayout="column" class="wishlist-create-form">
+<!-- Creation of title input-->
+  <mat-form-field fxFlex appearance="fill">
+    <mat-label>Title</mat-label>
+    <input type="text" name="title" matInput [(ngModel)]="item.title"/>
+  </mat-form-field>
+
+<!--- Creates the authors input-->
+  <mat-form-field fxFlex appearance="fill">
+    <mat-label>Authors</mat-label>
+    <input type="text" name="authors" matInput [(ngModel)]="item.authors"/>
+  </mat-form-field>
+
+  <button mat-button color="primary" (click)="addItem()">Add item</button>
+
+</form>

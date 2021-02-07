@@ -1,0 +1,41 @@
+<!--
+/*============================================;
+Title: Assignment 6.4;
+Author: Professor Krasso ;
+Date: 8 February 2020;
+Modified By: Douglas Jenkins;
+Description: Input Properties
+;===========================================*/
+-->
+
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+  <!--Calls the logo from the assets folder-->
+    <div class="logo">
+      <img src="./assets/gpa-calculator-app.png" height="80px">
+    </div>
+
+  <!--Routes it back home-->
+    <div style="width: 80%;">
+      <div fxLayout="row wrap" fxLayoutAlign="end start">
+        <button mat-button routerLink="/">Home</button>
+      </div>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<br>
+
+<div fxLayout="row wrap">
+
+  <div fxFlex>
+<!--Displays the assignment name-->
+    <mat-card class="main-container">
+      <mat-card-title>{{ assignment }}</mat-card-title>
+      <br><br>
+      <mat-card-content>
+        <router-outlet></router-outlet>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+/*============================================;
+Title: Assignment 6.3;
+Author: Professor Krasso ;
+Date: 7 February 2020;
+Modified By: Douglas Jenkins;
+Description: Layouts
+;===========================================*/
+
+.mistake{
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.mistake h1{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 50pt;
+}
+
+.mistake h3{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 25pt;
+  padding-top: 15px;
+}
+
+.mistake h5{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 15pt;
+  padding-top: 15px;
+}
