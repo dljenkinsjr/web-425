@@ -1,0 +1,39 @@
+/*============================================;
+Title: Assignment 7.2;
+Author: Professor Krasso ;
+Date: 13 February 2020;
+Modified By: Douglas Jenkins;
+Description: Input Exercise 7.2 - Reactive Forms
+;===========================================*/
+
+/* fixed error on home page */
+
+.mistake{
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.mistake h1{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 50pt;
+}
+
+.mistake h3{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 25pt;
+  padding-top: 15px;
+}
+
+.mistake h5{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 15pt;
+  padding-top: 15px;
+}
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
