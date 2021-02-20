@@ -1,0 +1,35 @@
+<!---
+/*============================================;
+Title: Assignment 8.2;
+Author: Professor Krasso ;
+Date: 19 February 2020;
+Modified By: Douglas Jenkins;
+Description: Server Side Communications
+;===========================================*/
+-->
+
+<mat-card>
+
+  <mat-card-title class="blue">
+
+  <!--Is calling for the book title to be displayed-->
+    {{ book.title }}
+  </mat-card-title>
+  <br /><br />
+  <mat-card-content>
+     <!--Is calling for information of the book to be displayed-->
+    <div fxLayout="column" class="book-details">
+      <p>ISBN: {{ book.isbn }}</p>
+
+      <p>Description:<br /> {{ book.description }}</p>
+
+      <p>Authors:<br /> {{ book.authors.join(', ')}}</p>
+    </div>
+  </mat-card-content>
+  <mat-card-actions align="end">
+    <button mat-raised-button color="accent" matDialogClose="confirm">OK</button>
+
+  </mat-card-actions>
+
+</mat-card>
+

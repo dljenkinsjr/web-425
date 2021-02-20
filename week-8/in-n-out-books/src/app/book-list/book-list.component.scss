@@ -1,0 +1,38 @@
+/*============================================;
+Title: Assignment 8.2;
+Author: Professor Krasso ;
+Date: 19 February 2020;
+Modified By: Douglas Jenkins;
+Description: Server Side Communications
+;===========================================*/
+
+.a-link{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.a-link:hover{
+  text-decoration: underline;
+}
+
+/* Creates the style for the grid*/
+.grid-container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: auto auto auto;
+  padding: 25px;
+}
+
+.grid-container__item {
+  padding: 20px;
+  font-size: 30px;
+}
+
+.grid-container__ahref {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.grid-container__ahref:hover {
+  text-decoration: underline;
+}
