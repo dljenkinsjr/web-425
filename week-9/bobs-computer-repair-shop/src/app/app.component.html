@@ -1,0 +1,45 @@
+<!--
+/*============================================;
+Title: Assignment 9.3;
+Author: Professor Krasso ;
+Date: 26 February 2020;
+Modified By: Douglas Jenkins;
+Description: Bob's Computer Repair
+;===========================================*/
+-->
+
+<mat-toolbar class="toolbar">
+  <mat-toolbar-row>
+    <div style="width: 80%">
+      <div fxLayout="row wrap" fxLayoutAlign="end start">
+        <button mat-button routerLink="/about">About</button>
+        <button mat-button routerLink="/service-list">Service-List</button>
+        <button mat-button routerLink="/contact">Contact</button>
+      </div>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<br />
+<div fxLayout="row wrap">
+  <div fxFlex>
+
+    <mat-card class="main-container">
+
+      <!--displays the website logo-->
+      <img src="./assets/bobs-logo.png" class="logo" height="60" />
+
+      <!--Calls the website name-->
+      <mat-card-title class="orange">{{ assignment }}</mat-card-title>
+      <br class="clear">
+      <br /><br />
+
+      <mat-card-content>
+
+        <router-outlet></router-outlet>
+
+      </mat-card-content>
+
+    </mat-card>
+  </div>
+</div>

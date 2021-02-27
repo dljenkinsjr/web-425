@@ -1,0 +1,48 @@
+<!--
+/*============================================;
+Title: Assignment 9.3;
+Author: Professor Krasso ;
+Date: 26 February 2020;
+Modified By: Douglas Jenkins;
+Description: Bob's Computer Repair
+;===========================================*/
+-->
+
+<div fxLayoutGap='16px'>
+  <div fxFlex>
+
+    <mat-card class='mat-elevation-z0'>
+
+      <!--the title for the list of services-->
+      <mat-card-title>
+        Here is a list of our services:
+      </mat-card-title>
+
+      <br>
+
+      <mat-card-content>
+
+        <!-- the clickable check boxes are going to be here -->
+        <mat-list>
+          <mat-list-item *ngFor="let item of servicesList">
+
+            <mat-checkbox name="" id="" totalValue="" [(ngModel)]="item.isChecked" (change)="changeSelection()">
+
+              {{item.label}}
+
+            </mat-checkbox>
+
+          </mat-list-item>
+
+        </mat-list>
+
+      </mat-card-content>
+    </mat-card>
+
+  </div>
+</div>
+
+<!-- will place the order and show the statement of purchase -->
+<div>
+  <button mat-button mat-raised-button color="accent" (click)='submit()'>Place Order</button>
+</div>

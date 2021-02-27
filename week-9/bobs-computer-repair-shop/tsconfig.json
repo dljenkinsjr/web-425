@@ -1,0 +1,27 @@
+/*============================================;
+Title: Assignment 9.3;
+Author: Professor Krasso ;
+Date: 26 February 2020;
+Modified By: Douglas Jenkins;
+Description: Bob's Computer Repair
+;===========================================*/
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "es2020",
+    "lib": [
+      "es2018",
+      "dom"
+    ]
+  }
+}

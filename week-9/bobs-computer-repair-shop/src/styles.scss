@@ -1,0 +1,51 @@
+/*============================================;
+Title: Assignment 9.3;
+Author: Professor Krasso ;
+Date: 26 February 2020;
+Modified By: Douglas Jenkins;
+Description: Bob's Computer Repair
+;===========================================*/
+
+@import './theme';
+
+html, body {
+  height: 100%;
+}
+
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.orange{
+  color: #ff9800;
+  padding: 10px;
+  font-size: 30pt;
+}
+
+.attribution-link {
+  text-decoration: none;
+  color: white;
+}
+
+.attribution-link:hover {
+  text-decoration: underline;
+}
+
+.card-title-icon {
+  text-align: center;
+
+}
+
+.card-title-icon, .mat-icon {
+  font-size: 72px;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.toolbar{
+  background-color: #BDBDBD;
+}

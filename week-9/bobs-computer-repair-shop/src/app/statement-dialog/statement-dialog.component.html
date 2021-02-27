@@ -1,0 +1,47 @@
+<!--
+/*============================================;
+Title: Assignment 9.3;
+Author: Professor Krasso ;
+Date: 26 February 2020;
+Modified By: Douglas Jenkins;
+Description: Bob's Computer Repair
+;===========================================*/
+-->
+
+<mat-dialog-content class="mat-elevation-z0">
+  <div fxFlex>
+      <mat-card class="mat-elevation-z0">
+
+        <!-- the statement will be shown here -->
+        <mat-card-title>Statement</mat-card-title>
+        <hr style="border: dashed;">
+      <br>
+
+      <mat-card-content>
+
+        <!-- the date of the statement creation will be displayed -->
+        <p>{{ today | date }}</p>
+
+        <!-- name of the item and the price -->
+      <h4 *ngFor='let item of selectedItemsList'>{{ item.label }}</h4>
+      <br>
+      <hr style="border: dashed;">
+
+      <!-- taxes, labor, parts and subtotal are added together -->
+      <p class="subtotal">Subtotal: ${{ total | number: '1.1-2'}}</p>
+      <p class="parts">Parts: ${{ parts | number: '1.1-2'}}</p>
+      <p class="labor">Labor: ${{ labor | number: '1.1-2'}}</p>
+      <p class="tax">Tax: ${{ tax | number: '1.1-2'}}</p>
+      <h4><b>Total: ${{ total + tax + labor + parts | number: '1.1-2'}}</b></h4>
+
+    </mat-card-content>
+
+  </mat-card>
+  </div>
+
+  </mat-dialog-content>
+
+  <!-- The submit button will just actually close the the popup dialog box -->
+  <mat-dialog-actions>
+    <button mat-raised-button color="accent" mat-dialog-close>Submit</button>
+  </mat-dialog-actions>
